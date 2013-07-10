@@ -1,0 +1,1 @@
+pref("eotoolbar.tbnevidebla",false);

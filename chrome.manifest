@@ -1,0 +1,5 @@
+content eotoolbar chrome/content/
+overlay chrome://browser/content/browser.xul chrome://eotoolbar/content/overlay.xul
+skin eotoolbar classic/1.0 chrome/skin/classic/
+style chrome://browser/content/browser.xul chrome://eotoolbar/skin/
+style chrome://global/content/customizeToolbar.xul  chrome://eotoolbar/skin/

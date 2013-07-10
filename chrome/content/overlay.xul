@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE window SYSTEM "chrome://monextension/locale/overlay.dtd">-->
+
+<overlay id="eotoolbar_overlay"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- en la menuo Iloj (Tools) -->
+<!--
+<menupopup id="menu_ToolsPopup">
+<menuitem id="eotoolbar_menu" label="Label EOTOOLBAR" oncommand="alert('samarch');" />
+</menupopup>
+-->
+
+<!-- butono en la Ilbaro (Toolbar)  -->
+<toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton id="eotoolbar-button"
+	oncommand="EsperantoToolbar.baskuli();"
+	label="EO Toolbar"
+	tooltiptext="Esperanto Toolbar (Ctrl+e)"
+	insertbefore="home-button"
+	class="toolbarbutton-1"
+	/>
+</toolbarpalette>
+
+<!-- ilbreto (toolbar)  -->
+<toolbox id="navigator-toolbox">
+  <toolbar id="eotoolbar" toolbarname="Esperanto Toolbar">
+    <toolbaritem id="eotoolbar-tbitem">
+      <label id="eotoolbar-label">Reta Vortaro :</label>
+	<textbox id="eotoolbar-revo">
+	  <hbox style="">
+	    <!-- 0: ReVo en nuna folio. oncommand = "enter" klakita -->
+	    <image id="eotoolbar-revo-butono"
+		   onclick="EsperantoToolbar.serĉu(0);"
+		   oncommand="EsperantoToolbar.serĉu(0);" 
+		   tooltiptext="Serĉu per la ReVo !"/>
+	    <!-- 1: ReVo en nova folio -->
+	    <image id="eotoolbar-revo-butono-nf"
+		   onclick="EsperantoToolbar.serĉu(1);"
+		   tooltiptext="Serĉu per la ReVo ! (Nova folio)"/>
+	  </hbox>
+	</textbox>
+	<!-- <toolbarbutton id="eotoolbar-revo-butono"
+      oncommand="serĉu(5);" /> -->
+      <!-- label="Serĉu ReVo !" -->
+    </toolbaritem>
+    <toolbarseparator />
+    <!-- La butonoj estas farita per la JS -->
+    <toolbarseparator id="postbutonoj" />
+<!--
+    <toolbaritem id="eotoolbar-tbitem-info" flex="1">
+      <label class="text-link"
+	     id="eotoolbar-info-label"
+	     href="https://addons.mozilla.org/fr/firefox/addon/5079">
+	Esperanto toolbar
+      </label>
+      <spacer flex="1" />
+      <label class="text-link"
+	     href="https://addons.mozilla.org/fr/firefox/addon/5079">
+	Esperanto toolbar
+      </label>
+    </toolbaritem>
+-->
+	<toolbarbutton id="eotoolbar-inforss"
+	oncommand="window._content.location.href = 'https://addons.mozilla.org/fr/firefox/addon/5079';"
+	label="Esperanto Toolbar"
+	tooltiptext="Klaku por vidi la retejon"
+	/>
+	<spacer flex="1" />
+	<toolbarbutton id="eotoolbar-retejo"
+	oncommand="window._content.location.href = 'https://addons.mozilla.org/fr/firefox/addon/5079';"
+	label="Esperanto Toolbar"
+	tooltiptext="Esperanto Toolbar retejo"
+	/>
+
+  </toolbar>
+</toolbox>
+
+<!-- JS kiu generas la butonoj -->
+<script type="application/x-javascript" src="eotoolbar.js"></script>
+
+<keyset id="mainKeyset">
+	<key id="eotoolbar-toggle-key" modifiers="accel" key="e" oncommand="EsperantoToolbar.baskuli();" />
+	<key modifiers="accel alt" key="c" oncommand="EsperantoToolbar.klaku('ĉ');" />
+	<key modifiers="accel alt" key="g" oncommand="EsperantoToolbar.klaku('ĝ');" />
+	<key modifiers="accel alt" key="h" oncommand="EsperantoToolbar.klaku('ĥ');" />
+	<key modifiers="accel alt" key="j" oncommand="EsperantoToolbar.klaku('ĵ');" />
+	<key modifiers="accel alt" key="s" oncommand="EsperantoToolbar.klaku('ŝ');" />
+	<key modifiers="accel alt" key="u" oncommand="EsperantoToolbar.klaku('ŭ');" />
+	<key modifiers="accel alt shift" key="c" oncommand="EsperantoToolbar.klaku('Ĉ');" />
+	<key modifiers="accel alt shift" key="g" oncommand="EsperantoToolbar.klaku('Ĝ');" />
+	<key modifiers="accel alt shift" key="h" oncommand="EsperantoToolbar.klaku('Ĥ');" />
+	<key modifiers="accel alt shift" key="j" oncommand="EsperantoToolbar.klaku('Ĵ');" />
+	<key modifiers="accel alt shift" key="s" oncommand="EsperantoToolbar.klaku('Ŝ');" />
+	<key modifiers="accel alt shift" key="u" oncommand="EsperantoToolbar.klaku('Ŭ');" />
+</keyset>
+
+</overlay>
+

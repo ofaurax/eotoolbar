@@ -1,0 +1,94 @@
+#eotoolbar-tbitem, #eotoolbar-tbitem-info
+{
+	-moz-box-align : center;
+}
+
+#eotoolbar-tbitem-info label
+{
+/*	border : black 1px solid;*/
+}
+
+#eotoolbar-button
+{
+	list-style-image : url(chrome://eotoolbar/skin/eotoolbar.png);
+}
+
+#eotoolbar-revo
+{
+    -moz-appearance : none;
+    
+    margin-right : 0px;
+    margin-top : 2px;
+    margin-bottom : 2px;
+    
+    padding : 0px;
+    padding-right : 3px;
+    padding-left : 3px;
+    
+    border : 1px solid;
+    
+    -moz-border-radius-width : 1px;
+    -moz-border-top-colors : #4e9a06; /*#8ae234;*/
+    -moz-border-right-colors : #4e9a06;
+    -moz-border-bottom-colors : #4e9a06;
+    -moz-border-left-colors : #4e9a06;
+    
+    -moz-box-align : center;
+    
+    -moz-box-direction: reverse;
+    
+    min-height: 22px;
+    min-width: 10em;
+    background-color: -moz-field;
+}
+
+#eotoolbar-revo-butono, #eotoolbar-revo-butono-nf
+{
+    -moz-appearance : none;
+
+    list-style-image : url(chrome://eotoolbar/skin/Search-glass.png);
+    -moz-image-region : rect(0px,16px,16px,0px);
+    
+    -moz-box-align : center;
+    
+    cursor: pointer;
+    
+    padding : 2px;
+    padding-right : 0px;
+    margin : 0px;
+    border : 0px;
+    
+    color : rgb(0,128,0);
+}
+
+#eotoolbar-revo-butono-nf
+{
+    list-style-image : url(chrome://eotoolbar/skin/Toolbar-small.png);
+    -moz-image-region : rect(0px,160px,16px,144px);
+}
+
+#eotoolbar-revo-butono .toolbarbutton-icon
+{
+    margin : 0px;
+}
+
+/*
+#eotoolbar-revo-butono:hover
+{
+	-moz-image-region : rect(0px,50px,22px,25px);
+}
+#eotoolbar-revo-butono:active
+{
+	-moz-image-region : rect(0px,100px,22px,75px);
+}
+*/
+
+.eotoolbar-litero-butono .toolbarbutton-text
+{
+	font-size : 1.2em;
+	padding : 0em .2em 0em .2em;
+}
+
+
+
+
