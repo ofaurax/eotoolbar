@@ -65,7 +65,7 @@ EsperantoToolbar.aldoniButonoj = function()
   eotb_serĉejo.addEventListener("keydown", EsperantoToolbar.revo_klaku, true);
 
   var eotb = document.getElementById('eotoolbar');
-  eotb.collapsed = EsperantoToolbar.pref.getBoolPref("eotoolbar.tbnevidebla");
+  eotb.collapsed = EsperantoToolbar.pref.getBoolPref("extensions.eotoolbar.tbnevidebla");
 
   var butonoj = ['ĉ', 'ĝ', 'ĥ', 'ĵ', 'ŝ', 'ŭ', 'Ĉ', 'Ĝ', 'Ĥ', 'Ĵ', 'Ŝ', 'Ŭ'];
   var butonoj2 = ['c', 'g', 'h', 'j', 's', 'u',
@@ -127,7 +127,7 @@ EsperantoToolbar.baskuli = function()
   var eotb = document.getElementById('eotoolbar');
   var eotb_serĉejo = document.getElementById('eotoolbar-revo');
   eotb.collapsed = !eotb.collapsed;
-  EsperantoToolbar.pref.setBoolPref("eotoolbar.tbnevidebla", eotb.collapsed);
+  EsperantoToolbar.pref.setBoolPref("extensions.eotoolbar.tbnevidebla", eotb.collapsed);
   if(!eotb.collapsed)
   {
     //eotb_serĉejo.focus();
