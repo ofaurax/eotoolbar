@@ -5,10 +5,10 @@
   <RDF:Description RDF:about="rdf:#$ebO2P1"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
-                   em:maxVersion="3.5.*" />
+                   em:maxVersion="39.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:name="Esperanto Toolbar"
-                   em:version="0.8"
+                   em:version="1.0"
                    em:id="eotoolbar@faurax.fr"
                    em:type="2"
                    em:creator="Olivier FAURAX"
