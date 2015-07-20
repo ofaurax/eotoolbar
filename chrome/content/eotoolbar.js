@@ -127,7 +127,7 @@ EsperantoToolbar.baskuli = function()
   var eotb = document.getElementById('eotoolbar');
   var eotb_serĉejo = document.getElementById('eotoolbar-revo');
   eotb.collapsed = !eotb.collapsed;
-  pref.setBoolPref("eotoolbar.tbnevidebla", eotb.collapsed);
+  EsperantoToolbar.pref.setBoolPref("eotoolbar.tbnevidebla", eotb.collapsed);
   if(!eotb.collapsed)
   {
     //eotb_serĉejo.focus();
