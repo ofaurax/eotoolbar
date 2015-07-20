@@ -1,1 +1,1 @@
-pref("eotoolbar.tbnevidebla",false);
+pref("extensions.eotoolbar.tbnevidebla",false);
