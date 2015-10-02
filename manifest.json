@@ -1,0 +1,18 @@
+
+{
+    "manifest_version": 2,
+    "name": "Esperanto Toolbar",
+    "version": "2.0",
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "chrome/skin/classic/eotoolbar-32.png"
+    },
+
+    "web_accessible_resources": [
+    ]
+    
+}
