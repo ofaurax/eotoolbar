@@ -35,8 +35,8 @@ EsperantoToolbar.httpRequest.onreadystatechange = function()
 		
 		var info = document.getElementById('eotoolbar-inforss');
 		info.setAttribute("oncommand",
-				  "window._content.location.href = '"+
-				  link.textContent+"';");
+				  "gBrowser.selectedBrowser.loadURI('"+
+				  link.textContent+"');");
 		info.setAttribute("label", title.textContent);
 		break;
 	    }
