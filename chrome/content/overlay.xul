@@ -62,13 +62,13 @@ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     </toolbaritem>
 -->
 	<toolbarbutton id="eotoolbar-inforss"
-	oncommand="window._content.location.href = 'https://addons.mozilla.org/fr/firefox/addon/5079';"
+	oncommand="gBrowser.selectedBrowser.loadURI('https://addons.mozilla.org/fr/firefox/addon/5079')"
 	label="Esperanto Toolbar"
 	tooltiptext="Klaku por vidi la retejon"
 	/>
 	<spacer flex="1" />
 	<toolbarbutton id="eotoolbar-retejo"
-	oncommand="window._content.location.href = 'https://addons.mozilla.org/fr/firefox/addon/5079';"
+	oncommand="gBrowser.selectedBrowser.loadURI('https://addons.mozilla.org/fr/firefox/addon/5079')"
 	label="Esperanto Toolbar"
 	tooltiptext="Esperanto Toolbar retejo"
 	/>
