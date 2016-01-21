@@ -35,8 +35,7 @@ EsperantoToolbar.httpRequest.onreadystatechange = function()
 		
 		var info = document.getElementById('eotoolbar-inforss');
 		info.setAttribute("oncommand",
-				  "window._content.location.href = '"+
-				  link.textContent+"';");
+				  "gBrowser.selectedBrowser.loadURI('"+link.textContent+"');");
 		info.setAttribute("label", title.textContent);
 		break;
 	    }
@@ -144,10 +143,10 @@ EsperantoToolbar.serĉu = function(typo)
     switch(typo)
 	{
 	case 0: // ReVo en nuna folio
-	    window._content.location.href =
+	    gBrowser.selectedBrowser.loadURI(
 		'http://www.reta-vortaro.de/cgi-bin/sercxu.pl'+
 		'?ref=eotoolbar&kadroj=1&sercxata='
-		+vorto;
+		+vorto);
 	    break;
 	case 1: // ReVo en nova folio 
 	    gBrowser.selectedTab =
@@ -156,8 +155,8 @@ EsperantoToolbar.serĉu = function(typo)
 				+vorto);
 	    break;
 	case 2: // ReVo per Google (ne uzita)
-	    window._content.location.href =
-		'http://www.google.fr/search?hl=eo&sitesearch=reta-vortaro.de&q='+vorto;
+	    gBrowser.selectedBrowser.loadURI(
+                'http://www.google.fr/search?hl=eo&sitesearch=reta-vortaro.de&q='+vorto);
 	    break;
 	default:
 	    alert('Esperanto Toolbar : eraro en typo :'+typo);
