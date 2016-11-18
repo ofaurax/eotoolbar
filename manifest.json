@@ -3,6 +3,7 @@
     "manifest_version": 2,
     "name": "Esperanto Toolbar",
     "version": "2.0",
+    "description": "Esperantistaj butonoj kaj serĉo.",
 
     "permissions": [
         "activeTab"
@@ -14,5 +15,16 @@
 
     "web_accessible_resources": [
     ]
+
+    "icons": {
+        "32": "chrome/skin/classic/eotoolbar-32.png"
+    }
     
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["eotoolbar.js"]
+        }
+    ]
+
 }
