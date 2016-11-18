@@ -14,17 +14,13 @@
     },
 
     "web_accessible_resources": [
-    ]
+    ],
 
     "icons": {
         "32": "chrome/skin/classic/eotoolbar-32.png"
-    }
-    
-    "content_scripts": [
-        {
-            "matches": ["*://*/*"],
-            "js": ["eotoolbar.js"]
-        }
-    ]
+    },
 
+    "background": {
+        "scripts": ["eotoolbar.js"]
+    }
 }
